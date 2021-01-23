@@ -1,0 +1,147 @@
+body {
+	background-color: #52575d;
+}
+
+.background {
+	position: relative;
+	margin: 0px auto;
+	height: 350px;
+	width: 200px;
+}
+
+.eve {
+	position: absolute;
+	left: 17%;
+	top: 5%;
+}
+
+.head {
+	background: linear-gradient(45deg, #eee, #fff, #fff 90%);
+	border-radius: 100% 100% 95% 95%;
+	position: absolute;
+	width: 120px;
+	height: 82px;
+	left: 5px;
+	top: 5px;
+}
+
+.face {
+	background: #313131;
+	position: absolute;
+	border-radius: 50%;
+	width: 100px;
+	height: 60px;
+	left: 10px;
+	top: 12px;
+} 
+
+.eye {
+	box-shadow: 0px 0px 10px #5DC9DB;
+	background: #5DC9DB;
+	border-radius: 50%;
+	height: 18px;
+	width: 32px;
+}
+
+.eye-left {
+	transform: rotate(16deg);
+	position: absolute;
+	left: 13px;
+	top: 20px;
+}
+
+.eye-right {
+	transform: rotate(-16deg);
+	position: absolute;
+	left: 56px;
+	top: 20px;
+}
+
+.body {
+	background: linear-gradient(45deg, #eee, #fff, #fff 85%);
+	position: absolute;
+	border-radius: 50%;
+	height: 150px;
+	width: 100px;
+	left: 15px;
+	top: 95px;
+}
+
+.body::before {
+  position: absolute;
+  border-radius: 10%;
+  background: #fff;
+  width: 100px;
+  height: 85px;
+  content:"";
+  }
+
+.arm {
+  background: linear-gradient(45deg, #eee, #fff, #fff 50%);
+  border-radius: 50%;
+  height: 110px;
+  width: 30px;
+}
+
+.arm-right {
+  transform: rotate(-16deg);
+  position: absolute;
+  left: 100px;
+}
+
+.arm-left {
+  transform: rotate(16deg);
+  position: absolute;
+  left: -30px;
+}
+
+.shadow {
+  position: absolute;
+  border-radius: 50%;
+  background: #000;
+  opacity: 0.1;
+  height: 10px;
+  width: 90px;
+  top: 295px;
+  left: 29%;
+}
+
+.eve {
+  animation: up 0.4s infinite ease-in-out alternate;
+}
+
+.shadow {
+  animation: shadow 0.4s infinite ease-in-out alternate;
+}
+
+.arm-left {
+  animation: arm-left 0.4s infinite ease-in-out alternate;
+}
+
+.arm-right {
+	animation: arm-right 0.4s infinite ease-in-out alternate;
+}
+
+@keyframes up {
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes shadow {
+  100% {
+    transform: scaleX(1.2);
+  }
+}
+
+@keyframes arm-left {
+	100% {
+    transform: rotate(25deg);
+  }
+}
+
+@keyframes arm-right {
+	100% {
+    transform: rotate(-25deg);
+  }
+}
