@@ -2,6 +2,7 @@ body {
 	background-color: #52575d;
 }
 
+
 .background {
 	position: relative;
 	margin: 0px auto;
@@ -68,54 +69,54 @@ body {
 }
 
 .body::before {
-  position: absolute;
-  border-radius: 10%;
-  background: #fff;
-  width: 100px;
-  height: 85px;
-  content:"";
-  }
+    position: absolute;
+    border-radius: 10%;
+    background: #fff;
+    width: 100px;
+    height: 85px;
+    content:"";
+}
 
 .arm {
-  background: linear-gradient(45deg, #eee, #fff, #fff 50%);
-  border-radius: 50%;
-  height: 110px;
-  width: 30px;
+    background: linear-gradient(45deg, #eee, #fff, #fff 50%);
+    border-radius: 50%;
+    height: 110px;
+    width: 30px;
 }
 
 .arm-right {
-  transform: rotate(-16deg);
-  position: absolute;
-  left: 100px;
+    transform: rotate(-16deg);
+    position: absolute;
+    left: 100px;
 }
 
 .arm-left {
-  transform: rotate(16deg);
-  position: absolute;
-  left: -30px;
+    transform: rotate(16deg);
+    position: absolute;
+    left: -30px;
 }
 
 .shadow {
-  position: absolute;
-  border-radius: 50%;
-  background: #000;
-  opacity: 0.1;
-  height: 10px;
-  width: 90px;
-  top: 295px;
-  left: 29%;
+    position: absolute;
+    border-radius: 50%;
+    background: #000;
+    opacity: 0.1;
+    height: 10px;
+    width: 90px;
+    top: 295px;
+    left: 29%;
 }
 
 .eve {
-  animation: up 0.4s infinite ease-in-out alternate;
+    animation: up 0.4s infinite ease-in-out alternate;
 }
 
 .shadow {
-  animation: shadow 0.4s infinite ease-in-out alternate;
+    animation: shadow 0.4s infinite ease-in-out alternate;
 }
 
 .arm-left {
-  animation: arm-left 0.4s infinite ease-in-out alternate;
+    animation: arm-left 0.4s infinite ease-in-out alternate;
 }
 
 .arm-right {
